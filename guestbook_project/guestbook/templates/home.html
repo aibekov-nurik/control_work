@@ -6,7 +6,10 @@
 {% for entry in entries %}
     <div class="card mb-3">
         <div class="card-body">
-            <h5 class="card-title">{{ entry.author_name }} ({{ entry.author_email }})</h5>
+            <h5 class="card-title">
+                {{ entry.author_name }} ({{ entry.author_email }})
+                <a href="{% url 'edit_guestbook_entry' entry.pk %}" class="btn btn-sm btn-secondary float-right">Редактировать</a>
+            </h5>
             <p class="card-text">{{ entry.entry_text }}</p>
             <p class="card-text"><small class="text-muted">Создано: {{ entry.created_at }}</small></p>
         </div>
