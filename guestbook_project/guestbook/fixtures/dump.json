@@ -1,0 +1,62 @@
+[
+    {
+        "model": "guestbook.guestbookentry",
+        "pk": 1,
+        "fields": {
+            "author_name": "Иван Иванов",
+            "author_email": "ivan@example.com",
+            "entry_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus. tortor sed eleifend tristiaue. tortor mauris molestie",
+            "created_at": "2024-07-06T12:00:00Z",
+            "updated_at": "2024-07-06T12:00:00Z",
+            "status": "active"
+        }
+    },
+    {
+        "model": "guestbook.guestbookentry",
+        "pk": 2,
+        "fields": {
+            "author_name": "Петр Петров",
+            "author_email": "petr@example.com",
+            "entry_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus. tortor sed eleifend tristiaue. tortor mauris molestie",
+            "created_at": "2024-07-06T12:05:00Z",
+            "updated_at": "2024-07-06T12:05:00Z",
+            "status": "active"
+        }
+    },
+    {
+        "model": "guestbook.guestbookentry",
+        "pk": 3,
+        "fields": {
+            "author_name": "Мария Сидорова",
+            "author_email": "maria@example.com",
+            "entry_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus. tortor sed eleifend tristiaue. tortor mauris molestie",
+            "created_at": "2024-07-06T12:10:00Z",
+            "updated_at": "2024-07-06T12:10:00Z",
+            "status": "blocked"
+        }
+    },
+    {
+        "model": "guestbook.guestbookentry",
+        "pk": 4,
+        "fields": {
+            "author_name": "Алексей Смирнов",
+            "author_email": "alexey@example.com",
+            "entry_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus. tortor sed eleifend tristiaue. tortor mauris molestie",
+            "created_at": "2024-07-06T12:15:00Z",
+            "updated_at": "2024-07-06T12:15:00Z",
+            "status": "active"
+        }
+    },
+    {
+        "model": "guestbook.guestbookentry",
+        "pk": 5,
+        "fields": {
+            "author_name": "Ольга Николаева",
+            "author_email": "olga@example.com",
+            "entry_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus. tortor sed eleifend tristiaue. tortor mauris molestie",
+            "created_at": "2024-07-06T12:20:00Z",
+            "updated_at": "2024-07-06T12:20:00Z",
+            "status": "blocked"
+        }
+    }
+]

@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404
 
 def guestbook_home(request):
     entries = GuestbookEntry.objects.filter(status='active').order_by('-created_at')
-    return render(request, 'guestbook/home.html', {'entries': entries})
+    return render(request, 'home.html', {'entries': entries})
 
 
 def add_guestbook_entry(request):
@@ -16,7 +16,7 @@ def add_guestbook_entry(request):
             return redirect('guestbook_home')
     else:
         form = GuestbookEntryForm()
-    return render(request, 'guestbook/add_entry.html', {'form': form})
+    return render(request, 'add_entry.html', {'form': form})
 
 def edit_guestbook_entry(request, pk):
     entry = get_object_or_404(GuestbookEntry, pk=pk)
@@ -27,5 +27,19 @@ def edit_guestbook_entry(request, pk):
             return redirect('guestbook_home')
     else:
         form = GuestbookEntryForm(instance=entry)
-    return render(request, 'guestbook/edit_entry.html', {'form': form, 'entry': entry})
+    return render(request, 'edit_entry.html', {'form': form, 'entry': entry})
+
+def delete_guestbook_entry(request, pk):
+    entry = get_object_or_404(GuestbookEntry, pk=pk)
+    if request.method == 'POST':
+        input_email = request.POST.get('email')
+        if input_email == entry.author_email:
+            entry.delete()
+            return redirect('guestbook_home')
+        else:
+            error_message = "Неправильный email."
+            return render(request, 'delete_entry.html', {'entry': entry, 'error_message': error_message})
+    return render(request, ''
+                           'delete_entry.html', {'entry': entry})
+
 

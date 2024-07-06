@@ -1,6 +1,8 @@
-{% extends 'guestbook/base.html' %}
+{% extends 'base.html' %}
 
 {% block content %}
-<h1>Добавить запись в гостевую книгу</h1>
-{% include 'guestbook/partials/form.html' %}
+<div class="container">
+    <h1 class="my-4">Добавить запись в гостевую книгу</h1>
+    {% include 'partial/form.html' %}
+</div>
 {% endblock %}
