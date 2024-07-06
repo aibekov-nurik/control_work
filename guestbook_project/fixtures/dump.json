@@ -1,0 +1,38 @@
+[
+    {
+        "model": "guestbook.guestbookentry",
+        "pk": 1,
+        "fields": {
+            "author_name": "Иван Иванов",
+            "author_email": "ivan@example.com",
+            "entry_text": "Это тестовая запись.",
+            "created_at": "2024-07-06T10:00:00Z",
+            "updated_at": "2024-07-06T10:00:00Z",
+            "status": "active"
+        }
+    },
+    {
+        "model": "guestbook.guestbookentry",
+        "pk": 2,
+        "fields": {
+            "author_name": "Петр Петров",
+            "author_email": "petr@example.com",
+            "entry_text": "Это заблокированная запись.",
+            "created_at": "2024-07-06T11:00:00Z",
+            "updated_at": "2024-07-06T11:00:00Z",
+            "status": "blocked"
+        }
+    },
+    {
+        "model": "guestbook.guestbookentry",
+        "pk": 3,
+        "fields": {
+            "author_name": "Сергей Сергеев",
+            "author_email": "sergey@example.com",
+            "entry_text": "Еще одна тестовая запись.",
+            "created_at": "2024-07-06T12:00:00Z",
+            "updated_at": "2024-07-06T12:00:00Z",
+            "status": "active"
+        }
+    }
+]
